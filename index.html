@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Report</title>
+</head>
+<body>
+    <div class="container">
+        <section class="main">
+            <section class="inputs">
+                <input type="text" placeholder="Enter Your City Name..." id="cityinput">
+                <input type="submit" value="submit" id="add">
+            </section>
+
+            <section class="display">
+                <div class="wrapper">
+                    <h2 id="cityoutput"></h2>
+                    <div class="results">
+                        <div id="sky">
+                            <p id="description"></p>
+                            <img id="weather-icon" src="" alt="weather icon" style="width: 100px; display: none; margin: auto; margin-bottom: 20px;">
+                        </div>
+                        <div id="temp-wind-container">
+                            <div id="images" style="display: none;">
+                                <img id="temp-icon" src="pictures/thermometer.png" alt="temp" style="width: 62px;">
+                                <img id="wind-icon" src="pictures/wind.png" alt="wind" style="width: 62px;">
+                            </div>
+                            <div id="temp-wind">
+                                <p id="temp"></p>
+                                <p id="wind"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
